@@ -1,0 +1,14 @@
+version: "3.7"
+services:
+  mesh:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+      args:
+        tag: latest
+        packages: "@graphql-mesh/cli @graphql-mesh/graphql graphql"
+    volumes:
+      - ./.meshrc.yaml:/work/.meshrc.yaml
+
+    ports:
+      - "4000:4000"

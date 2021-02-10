@@ -1,0 +1,10 @@
+sources:
+  - name: SpaceX
+    handler:
+      graphql:
+        endpoint: https://api.spacex.land/graphql/
+  - name: RickandMorty
+    handler:
+      graphql:
+        endpoint: https://rickandmortyapi.com/graphql
+
